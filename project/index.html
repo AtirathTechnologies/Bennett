@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online MBA – Bennett Online</title>
+    <link rel="icon" href="./asset/image/favicon.webp" sizes="32x32">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Googl Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/specialisations.css">
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./asset/image/logo-1.png" alt="Bennett Online">
+                </a>
+
+                <!-- Mobile Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                    <i class="bi bi-list menu-open"></i>
+                    <i class="bi bi-x menu-close"></i>
+                </button>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item divider">
+                            <a class="nav-link" href="#highlights">Highlights</a>
+                        </li>
+
+                        <li class="nav-item divider">
+                            <a class="nav-link" href="#program-structure">Program</a>
+                        </li>
+
+                        <li class="nav-item divider">
+                            <a class="nav-link" href="#electives">Electives</a>
+                        </li>
+
+                        <li class="nav-item divider">
+                            <a class="nav-link" href="#faculty">Faculty</a>
+                        </li>
+
+                        <li class="nav-item divider">
+                            <a class="nav-link" href="#fees">Fees</a>
+                        </li>
+
+                        <li class="nav-item divider">
+                            <a class="nav-link" href="#certificate">Certificate</a>
+                        </li>
+
+                        <li class="nav-item divider">
+                            <a class="nav-link" href="#recruiters">Recruiters</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link enquire-btn" href="#enquiry-form">Enquire Now</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    <section class="mba-hero-banner">
+        <div class="container">
+            <div class="row align-items-center g-4 py-3">
+
+                <!-- Left Content -->
+                <div class="col-lg-7">
+                    <div class="hero-left-card d-flex flex-column justify-content-center">
+                        <h5 class="pb-3">Accelerate Your Next Leadership Move.</h5>
+                        <h1 class="pb-3">Online MBA</h1>
+                        <p>2 Years | 100% Online + Live Sessions | UGC Entitled</p>
+                        <p>Designed for Working Professionals to grow faster, without quitting work</p>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="col-lg-5">
+                    <div class="mba-form-section">
+                        <form id="userFrm" class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label"><span class="text-danger">*</span> Enter Full Name</label>
+                                <input type="text" class="form-control" placeholder="Enter Full Name" name="fullname"
+                                    required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label"><span class="text-danger">*</span> Your Email</label>
+                                <input type="email" class="form-control" placeholder="Enter Your Email" name="email"
+                                    required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label"><span class="text-danger">*</span> Mobile Number</label>
+
+                                <div class="d-flex phone-wrapper">
+                                    <select class="form-select country-code" name="country_code">
+                                        <option>+91</option>
+                                        <option>+1</option>
+                                        <option>+44</option>
+                                        <option>+61</option>
+                                        <option>+971</option>
+                                    </select>
+
+                                    <input type="tel" class="form-control mobile-input"
+                                        placeholder="Enter Mobile Number" name="mobile" required />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label"><span class="text-danger">*</span> City</label>
+                                <select class="form-select" name="city" required>
+                                    <option selected disabled>Select City</option>
+                                    <option>Mumbai</option>
+                                    <option>Delhi</option>
+                                    <option>Pune</option>
+                                    <option>Bangalore</option>
+                                    <option>Hyderabad</option>
+                                    <option>Ahmedabad</option>
+                                    <option>Chennai</option>
+                                    <option>Kolkata</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">MBA Specialization</label>
+                                <select class="form-select" name="mba_specialization" required>
+                                    <option>Business Analytics</option>
+                                    <option>Finance</option>
+                                    <option>Human Resource Management</option>
+                                    <option>Logistics & Supply Chain Management</option>
+                                    <option>Media Management</option>
+                                    <option>Sales and Marketing</option>
+                                </select>
+                            </div>
+
+                            <!-- Honeypot anti-spam (hidden from real users) -->
+                            <input type="text" name="hp_field" id="hp_field" value="" autocomplete="off" tabindex="-1"
+                                aria-hidden="true"
+                                style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;opacity:0;">
+
+                            <!-- Education -->
+                            <input value="Unkown" type="hidden" name="education">
+
+                            <!-- Work Experience -->
+                            <input value="Less than 5 Years" type="hidden" name="experience">
+
+                            <!-- Work Experience -->
+                            <input value="BU-CDOE MBA" type="hidden" name="program">
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="marketing_consent" checked>
+                                    <label class="form-check-label">
+                                        I agree to receive communication via Email/Call/WhatsApp/SMS.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <p class="small text-muted">
+                                    By clicking the button below, you agree to Bennett University's
+                                    <a href="https://www.bennettonline.com/privacy-policy/">Privacy Policy</a>.
+                                </p>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn submit-btn w-100">
+                                    Download Brochure
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="process py-5">
+        <div class="container">
+            <div class="row g-3 text-center">
+
+                <!-- CARD 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <h5 class="process-title pb-4">BATCH STARTS</h5>
+                        <h4 class="process-heading pb-2">Admissions Open</h4>
+                        <p class="pb-3">Limited Seats</p>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <h6 class="process-title pb-4">DURATION</h6>
+                        <h4 class="process-heading pb-2">Duration : 2 Years</h4>
+                        <p class="pb-3">No. of Semesters : 4</p>
+                        <p>Programme Completion Validity : 4 Years</p>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <h6 class="process-title pb-4">PROGRAMME FEE</h6>
+                        <h4 class="process-heading pb-2">₹52,500 / Semester</h4>
+                        <p class="pb-3">No. of Semesters : 4 <br>No Cost EMI Option Available</p>
+                        <a href="#fees" class="process-link">Detailed Fee Structure & EMI Options</a>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <h6 class="process-title pb-4">ELIGIBILITY</h6>
+                        <h4 class="process-heading pb-2">Graduate</h4>
+                        <p class="pb-3">Graduate with minimum 50%</p>
+                        <a href="#eligibility" class="process-link">Detailed Programme Eligibility</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="why-bennett py-5" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-6 mb-4">
+                    <h2 class="fw-bold pb-3">
+                        <span class="text-primary-custom">Bennett</span> Online
+                    </h2>
+                    <blockquote class="bennett-text py-4">
+                        <p class="pb-3">
+                            <i><strong>Bennett Online</strong> is the Centre for Distance & Online Education of
+                                <strong>Bennett University</strong>, one of India’s leading private universities
+                                established
+                                by
+                                <strong>The Times Group</strong>.</i>
+                        </p>
+                        <p>
+                            <i>It delivers <strong>future-ready, industry-aligned online programs</strong>,
+                                designed to help professionals grow their careers without putting them on pause.</i>
+                        </p>
+                    </blockquote>
+                </div>
+
+                <!-- RIGHT CONTENT -->
+                <div class="col-lg-6">
+
+                    <h2 class="fw-bold mb-4">
+                        Why <span class="text-primary-custom">Bennett University</span>
+                    </h2>
+
+                    <!-- LOGOS -->
+                    <div class="row g-3 mb-4 text-center bg-white rounded pb-4">
+                        <div class="col-6 col-md-3">
+                            <img decoding="async" src="./asset/image/UGC.png" title="UGC-2" alt="UGC-2" loading="lazy"
+                                class="img-fluid">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img decoding="async" src="./asset/image/NAAC.png" title="NAAC-logo (1)" alt="NAAC-logo (1)"
+                                loading="lazy" class="img-fluid">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img decoding="async" src="./asset/image/AIU.png" title="AIU Logo" alt="new-times-logo"
+                                loading="lazy" class="img-fluid">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <img decoding="async" src="./asset/image/new-times.png" title="Times Group" alt="AIU-2"
+                                loading="lazy" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <!-- COUNTERS -->
+                    <div class="row text-center">
+
+                        <div class="col-6 col-md-3 mb-3">
+                            <h3> <span class="counter" data-target="13500">0</span>+</h3>
+                            <p>Lives Transformed</p>
+                        </div>
+
+                        <div class="col-6 col-md-3 mb-3">
+                            <h3><span class="counter" data-target="1200">0</span>+</h3>
+                            <p>Companies for Placements</p>
+                        </div>
+
+                        <div class="col-6 col-md-3 mb-3">
+                            <h3><span class="counter" data-target="90">0</span>%+</h3>
+                            <p>PH.D. Faculty</p>
+                        </div>
+
+                        <div class="col-6 col-md-3 mb-3">
+                            <h3><span class="counter" data-target="120">0</span>+</h3>
+                            <p>International Collaborations</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="program-highlights py-5" id="highlights">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="mb-5">
+                <h2 class="fw-bold">
+                    Programme key <span class="text-primary-custom">highlights</span>
+                </h2>
+            </div>
+
+            <!-- Grid -->
+            <div class="row g-4">
+
+                <!-- Item -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="highlight-card text-center">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-book-reader" viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M352 96c0-53.02-42.98-96-96-96s-96 42.98-96 96 42.98 96 96 96 96-42.98 96-96zM233.59 241.1c-59.33-36.32-155.43-46.3-203.79-49.05C13.55 191.13 0 203.51 0 219.14v222.8c0 14.33 11.59 26.28 26.49 27.05 43.66 2.29 131.99 10.68 193.04 41.43 9.37 4.72 20.48-1.71 20.48-11.87V252.56c-.01-4.67-2.32-8.95-6.42-11.46zm248.61-49.05c-48.35 2.74-144.46 12.73-203.78 49.05-4.1 2.51-6.41 6.96-6.41 11.63v245.79c0 10.19 11.14 16.63 20.54 11.9 61.04-30.72 149.32-39.11 192.97-41.4 14.9-.78 26.49-12.73 26.49-27.06V219.14c-.01-15.63-13.56-28.01-29.81-27.09z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4>Future-Ready Curriculum</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="highlight-card text-center">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-user-tie" viewBox="0 0 448 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4>Built for Young Professionals</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="highlight-card text-center">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-tablet-alt" viewBox="0 0 448 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M400 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM224 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm176-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h328c6.6 0 12 5.4 12 12v312z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4>100% Online & Flexible</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="highlight-card text-center">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-people-arrows" viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M96,128A64,64,0,1,0,32,64,64,64,0,0,0,96,128Zm0,176.08a44.11,44.11,0,0,1,13.64-32L181.77,204c1.65-1.55,3.77-2.31,5.61-3.57A63.91,63.91,0,0,0,128,160H64A64,64,0,0,0,0,224v96a32,32,0,0,0,32,32V480a32,32,0,0,0,32,32h64a32,32,0,0,0,32-32V383.61l-50.36-47.53A44.08,44.08,0,0,1,96,304.08ZM480,128a64,64,0,1,0-64-64A64,64,0,0,0,480,128Zm32,32H448a63.91,63.91,0,0,0-59.38,40.42c1.84,1.27,4,2,5.62,3.59l72.12,68.06a44.37,44.37,0,0,1,0,64L416,383.62V480a32,32,0,0,0,32,32h64a32,32,0,0,0,32-32V352a32,32,0,0,0,32-32V224A64,64,0,0,0,512,160ZM444.4,295.34l-72.12-68.06A12,12,0,0,0,352,236v36H224V236a12,12,0,0,0-20.28-8.73L131.6,295.34a12.4,12.4,0,0,0,0,17.47l72.12,68.07A12,12,0,0,0,224,372.14V336H352v36.14a12,12,0,0,0,20.28,8.74l72.12-68.07A12.4,12.4,0,0,0,444.4,295.34Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4>Industry-Embedded</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="highlight-card text-center">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-chalkboard-teacher"
+                                viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M208 352c-2.39 0-4.78.35-7.06 1.09C187.98 357.3 174.35 360 160 360c-14.35 0-27.98-2.7-40.95-6.91-2.28-.74-4.66-1.09-7.05-1.09C49.94 352-.33 402.48 0 464.62.14 490.88 21.73 512 48 512h224c26.27 0 47.86-21.12 48-47.38.33-62.14-49.94-112.62-112-112.62zm-48-32c53.02 0 96-42.98 96-96s-42.98-96-96-96-96 42.98-96 96 42.98 96 96 96zM592 0H208c-26.47 0-48 22.25-48 49.59V96c23.42 0 45.1 6.78 64 17.8V64h352v288h-64v-64H384v64h-76.24c19.1 16.69 33.12 38.73 39.69 64H592c26.47 0 48-22.25 48-49.59V49.59C640 22.25 618.47 0 592 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4>Career-First Design</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="highlight-card text-center">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-user-friends" viewBox="0 0 640 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4>Learning That Fits Real Lives</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="highlight-card text-center">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-certificate" viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M458.622 255.92l45.985-45.005c13.708-12.977 7.316-36.039-10.664-40.339l-62.65-15.99 17.661-62.015c4.991-17.838-11.829-34.663-29.661-29.671l-61.994 17.667-15.984-62.671C337.085.197 313.765-6.276 300.99 7.228L256 53.57 211.011 7.229c-12.63-13.351-36.047-7.234-40.325 10.668l-15.984 62.671-61.995-17.667C74.87 57.907 58.056 74.738 63.046 92.572l17.661 62.015-62.65 15.99C.069 174.878-6.31 197.944 7.392 210.915l45.985 45.005-45.985 45.004c-13.708 12.977-7.316 36.039 10.664 40.339l62.65 15.99-17.661 62.015c-4.991 17.838 11.829 34.663 29.661 29.671l61.994-17.667 15.984 62.671c4.439 18.575 27.696 24.018 40.325 10.668L256 458.61l44.989 46.001c12.5 13.488 35.987 7.486 40.325-10.668l15.984-62.671 61.994 17.667c17.836 4.994 34.651-11.837 29.661-29.671l-17.661-62.015 62.65-15.99c17.987-4.302 24.366-27.367 10.664-40.339l-45.984-45.004z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4>Premium & Credible Programme</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="highlight-card text-center">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-code-branch" viewBox="0 0 384 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M384 144c0-44.2-35.8-80-80-80s-80 35.8-80 80c0 36.4 24.3 67.1 57.5 76.8-.6 16.1-4.2 28.5-11 36.9-15.4 19.2-49.3 22.4-85.2 25.7-28.2 2.6-57.4 5.4-81.3 16.9v-144c32.5-10.2 56-40.5 56-76.3 0-44.2-35.8-80-80-80S0 35.8 0 80c0 35.8 23.5 66.1 56 76.3v199.3C23.5 365.9 0 396.2 0 432c0 44.2 35.8 80 80 80s80-35.8 80-80c0-34-21.2-63.1-51.2-74.6 3.1-5.2 7.8-9.8 14.9-13.4 16.2-8.2 40.4-10.4 66.1-12.8 42.2-3.9 90-8.4 118.2-43.4 14-17.4 21.1-39.8 21.6-67.9 31.6-10.8 54.4-40.7 54.4-75.9zM80 64c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm0 384c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zm224-320c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4>AI Ready Learning Platform</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="curriculum py-5" id="program-structure">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- LEFT SIDE -->
+                <div class="col-lg-8">
+
+                    <!-- Heading -->
+                    <div class="mb-4">
+                        <h2 class="fw-bold pb-3">
+                            Programme <span class="text-primary-custom">Curriculum</span>
+                        </h2>
+                        <p class="mb-0">
+                            Curriculum designed and delivered by Bennett University faculty & Industry Experts
+                        </p>
+                    </div>
+
+                    <!-- Accordion -->
+                    <div class="accordion" id="curriculumAccordion">
+
+                        <!-- Semester 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sem1">
+                                    Semester 1
+                                </button>
+                            </h2>
+                            <div id="sem1" class="accordion-collapse collapse show"
+                                data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <!-- Bootstrap Table (Borderless) -->
+                                    <div class="container my-4">
+                                        <div class="table-responsive">
+                                            <table class="table table-borderless align-middle">
+                                                <thead class="fw-bold">
+                                                    <tr>
+                                                        <th>Subject</th>
+                                                        <th class="text-center">Course Credit</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Managerial Economics</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Managerial Communication</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Marketing for Managers</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Quantitative Methods for Managers</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Organizational Dynamics</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Machine Learning for Managers</td>
+                                                        <td class="text-center">1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Indian Knowledge System</td>
+                                                        <td class="text-center">1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <p><strong>Total Semester Credit: 22</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Semester 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sem2">
+                                    Semester 2
+                                </button>
+                            </h2>
+                            <div id="sem2" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <!-- Bootstrap Table (Borderless) -->
+                                    <div class="container my-4">
+                                        <div class="table-responsive">
+                                            <table class="table table-borderless align-middle">
+                                                <thead class="fw-bold">
+                                                    <tr>
+                                                        <th>Subject</th>
+                                                        <th class="text-center">Course Credit</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Business Law</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Financial Accounting and Analysis</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Human Capital Management</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Operations Management</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Strategy for Managers</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Adaptive Change and Resilience</td>
+                                                        <td class="text-center">1</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Emotional Intelligence & Resonant Leadership</td>
+                                                        <td class="text-center">1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p><strong>Total Semester Credit: 22</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Semester 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sem3">
+                                    Semester 3
+                                </button>
+                            </h2>
+                            <div id="sem3" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <div class="container my-4">
+                                        <div class="table-responsive">
+                                            <table class="table table-borderless align-middle">
+                                                <thead class="fw-bold">
+                                                    <tr>
+                                                        <th>Subject</th>
+                                                        <th class="text-center">Course Credit</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Applied Business Research</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Professional Ethics, Sustainability and Social
+                                                            Responsiveness</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Elective 1</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Elective 2</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Elective 3</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Digital Transformation</td>
+                                                        <td class="text-center">1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p><strong>Total Semester Credit: 21</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Semester 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sem4">
+                                    Semester 4
+                                </button>
+                            </h2>
+                            <div id="sem4" class="accordion-collapse collapse" data-bs-parent="#curriculumAccordion">
+                                <div class="accordion-body">
+                                    <div class="container my-4">
+                                        <div class="table-responsive">
+                                            <table class="table table-borderless align-middle custom-table">
+                                                <thead class="fw-bold">
+                                                    <tr>
+                                                        <th>Subject</th>
+                                                        <th class="text-center">Course Credit</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Entrepreneurial Mindset and Innovation</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Corporate Finance</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Project</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Elective 4</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Elective 5</td>
+                                                        <td class="text-center">4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Managerial Skills</td>
+                                                        <td class="text-center">1</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <p><strong>Total Semester Credit: 21</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE CARD -->
+                <div class="col-lg-4">
+                    <div class="p-4 rounded shadow h-100" style="background-color: #ffffff;">
+
+                        <h2 class=" text-center pb-3">Take The Next Step</h2>
+                        <p class="fw-light pb-4">
+                            Explore the programme curriculum, specialisations, learning format,
+                            eligibility, and fees.
+                        </p>
+                        <p class="pb-3"><strong><em>Get everything you need to decide at a glance.</em></strong></p>
+
+                        <img src="./asset/image/Online-MBA-Banner.png" class="img-fluid mb-3" alt="MBA Banner">
+
+                        <a href="#" class="btn btn-danger w-100">
+                            Speak with Counsellor →
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="specialisations py-5" id="electives">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="mb-4">
+                <h2 class="fw-bold pb-3">
+                    Specialisations &
+                    <span class="text-primary-custom">Electives</span>
+                </h2>
+                <p class="text-muted">
+                    With industry-aligned electives across emerging domains, the Bennett Online MBA enables you to
+                    select a specialization that aligns with your career goals and sets you apart in a competitive
+                    business landscape.
+                </p>
+            </div>
+
+            <!-- Cards -->
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="spec-card" style="background-color: #2a3d66;">
+                        <div class="icon-box">
+                            <!-- SVG -->
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-people-carry" viewBox="0 0 640 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M128 96c26.5 0 48-21.5 48-48S154.5 0 128 0 80 21.5 80 48s21.5 48 48 48zm384 0c26.5 0 48-21.5 48-48S538.5 0 512 0s-48 21.5-48 48 21.5 48 48 48zm125.7 372.1l-44-110-41.1 46.4-2 18.2 27.7 69.2c5 12.5 17 20.1 29.7 20.1 4 0 8-.7 11.9-2.3 16.4-6.6 24.4-25.2 17.8-41.6zm-34.2-209.8L585 178.1c-4.6-20-18.6-36.8-37.5-44.9-18.5-8-39-6.7-56.1 3.3-22.7 13.4-39.7 34.5-48.1 59.4L432 229.8 416 240v-96c0-8.8-7.2-16-16-16H240c-8.8 0-16 7.2-16 16v96l-16.1-10.2-11.3-33.9c-8.3-25-25.4-46-48.1-59.4-17.2-10-37.6-11.3-56.1-3.3-18.9 8.1-32.9 24.9-37.5 44.9l-18.4 80.2c-4.6 20 .7 41.2 14.4 56.7l67.2 75.9 10.1 92.6C130 499.8 143.8 512 160 512c1.2 0 2.3-.1 3.5-.2 17.6-1.9 30.2-17.7 28.3-35.3l-10.1-92.8c-1.5-13-6.9-25.1-15.6-35l-43.3-49 17.6-70.3 6.8 20.4c4.1 12.5 11.9 23.4 24.5 32.6l51.1 32.5c4.6 2.9 12.1 4.6 17.2 5h160c5.1-.4 12.6-2.1 17.2-5l51.1-32.5c12.6-9.2 20.4-20 24.5-32.6l6.8-20.4 17.6 70.3-43.3 49c-8.7 9.9-14.1 22-15.6 35l-10.1 92.8c-1.9 17.6 10.8 33.4 28.3 35.3 1.2.1 2.3.2 3.5.2 16.1 0 30-12.1 31.8-28.5l10.1-92.6 67.2-75.9c13.6-15.5 19-36.7 14.4-56.7zM46.3 358.1l-44 110c-6.6 16.4 1.4 35 17.8 41.6 16.8 6.6 35.1-1.7 41.6-17.8l27.7-69.2-2-18.2-41.1-46.4z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="pb-3 text-light">Sales and Marketing</h4>
+                        <p>Drive growth through branding, strategy, and customer insights.</p>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="spec-card" style="background-color: #a9761a;">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-money-check-alt" viewBox="0 0 640 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M608 32H32C14.33 32 0 46.33 0 64v384c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V64c0-17.67-14.33-32-32-32zM176 327.88V344c0 4.42-3.58 8-8 8h-16c-4.42 0-8-3.58-8-8v-16.29c-11.29-.58-22.27-4.52-31.37-11.35-3.9-2.93-4.1-8.77-.57-12.14l11.75-11.21c2.77-2.64 6.89-2.76 10.13-.73 3.87 2.42 8.26 3.72 12.82 3.72h28.11c6.5 0 11.8-5.92 11.8-13.19 0-5.95-3.61-11.19-8.77-12.73l-45-13.5c-18.59-5.58-31.58-23.42-31.58-43.39 0-24.52 19.05-44.44 42.67-45.07V152c0-4.42 3.58-8 8-8h16c4.42 0 8 3.58 8 8v16.29c11.29.58 22.27 4.51 31.37 11.35 3.9 2.93 4.1 8.77.57 12.14l-11.75 11.21c-2.77 2.64-6.89 2.76-10.13.73-3.87-2.43-8.26-3.72-12.82-3.72h-28.11c-6.5 0-11.8 5.92-11.8 13.19 0 5.95 3.61 11.19 8.77 12.73l45 13.5c18.59 5.58 31.58 23.42 31.58 43.39 0 24.53-19.05 44.44-42.67 45.07zM416 312c0 4.42-3.58 8-8 8H296c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h112c4.42 0 8 3.58 8 8v16zm160 0c0 4.42-3.58 8-8 8h-80c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16zm0-96c0 4.42-3.58 8-8 8H296c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h272c4.42 0 8 3.58 8 8v16z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="pb-3 text-light">Finance</h4>
+                        <p>Build expertise in corporate finance and investment strategy.</p>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="spec-card" style="background-color: #237984;">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-link" viewBox="0 0 512 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="pb-3 text-light">Logistics & Supply Chain</h4>
+                        <p>Manage operations with global supply chain leadership skills.</p>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="spec-card" style="background-color: #50672a;">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-people-arrows" viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M96,128A64,64,0,1,0,32,64,64,64,0,0,0,96,128Zm0,176.08a44.11,44.11,0,0,1,13.64-32L181.77,204c1.65-1.55,3.77-2.31,5.61-3.57A63.91,63.91,0,0,0,128,160H64A64,64,0,0,0,0,224v96a32,32,0,0,0,32,32V480a32,32,0,0,0,32,32h64a32,32,0,0,0,32-32V383.61l-50.36-47.53A44.08,44.08,0,0,1,96,304.08ZM480,128a64,64,0,1,0-64-64A64,64,0,0,0,480,128Zm32,32H448a63.91,63.91,0,0,0-59.38,40.42c1.84,1.27,4,2,5.62,3.59l72.12,68.06a44.37,44.37,0,0,1,0,64L416,383.62V480a32,32,0,0,0,32,32h64a32,32,0,0,0,32-32V352a32,32,0,0,0,32-32V224A64,64,0,0,0,512,160ZM444.4,295.34l-72.12-68.06A12,12,0,0,0,352,236v36H224V236a12,12,0,0,0-20.28-8.73L131.6,295.34a12.4,12.4,0,0,0,0,17.47l72.12,68.07A12,12,0,0,0,224,372.14V336H352v36.14a12,12,0,0,0,20.28,8.74l72.12-68.07A12.4,12.4,0,0,0,444.4,295.34Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h5>Human Resource</h5>
+                        <p>Shape organizational culture and lead people transformation.</p>
+                    </a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="spec-card" style="background-color: #4e4f80;">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-photo-video" viewBox="0 0 640 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M608 0H160a32 32 0 0 0-32 32v96h160V64h192v320h128a32 32 0 0 0 32-32V32a32 32 0 0 0-32-32zM232 103a9 9 0 0 1-9 9h-30a9 9 0 0 1-9-9V73a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9zm352 208a9 9 0 0 1-9 9h-30a9 9 0 0 1-9-9v-30a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9zm0-104a9 9 0 0 1-9 9h-30a9 9 0 0 1-9-9v-30a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9zm0-104a9 9 0 0 1-9 9h-30a9 9 0 0 1-9-9V73a9 9 0 0 1 9-9h30a9 9 0 0 1 9 9zm-168 57H32a32 32 0 0 0-32 32v288a32 32 0 0 0 32 32h384a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM96 224a32 32 0 1 1-32 32 32 32 0 0 1 32-32zm288 224H64v-32l64-64 32 32 128-128 96 96z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="pb-3 text-light">Media Management</h4>
+                        <p>Lead digital, entertainment, and media business strategy.</p>
+                    </a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <a href="#" class="spec-card" style="background-color: #931f31;">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-database" viewBox="0 0 448 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="pb-3 text-light">Business Analytics</h4>
+                        <p>Master data-driven decision-making and predictive insights.</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="curriculum py-5">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- LEFT SIDE -->
+                <div class="col-lg-8">
+
+                    <div class="mb-4">
+                        <h2 class="fw-bold pb-3">
+                            Electives <span class="text-primary-custom">for Online MBA</span>
+                        </h2>
+                    </div>
+
+                    <div class="accordion" id="accordionMBA">
+
+                        <!-- ITEM 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Sales and Marketing
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionMBA">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Understanding Consumers and Strategic Brand Management (Semester 3, Credit
+                                            4)</li>
+                                        <li>Digital and Integrated Marketing Communications (Semester 3, Credit 4)</li>
+                                        <li>Sales, Distribution, and Retail Management (Semester 3, Credit 4)</li>
+                                        <li>Marketing Analytics and Sustainability (Semester 4, Credit 4)</li>
+                                        <li>Industrial and Services Marketing (Semester 4, Credit 4)</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Finance
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionMBA">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Financial Analysis and Business Valuation (Semester 3, Credit 4)</li>
+                                        <li>International Finance (Semester 3, Credit 4)</li>
+                                        <li>Investment Analysis and Portfolio Management (Semester 3, Credit 4)</li>
+                                        <li>Behavioural Finance and Wealth Management (Semester 4, Credit 4)</li>
+                                        <li>Banking and Financial Risk Management (Semester 4, Credit 4)</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree">
+                                    Logistics & Supply Chain Management
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionMBA">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Supply Chain Management and Sustainability Analytics (Semester 3, Credit 4)
+                                        </li>
+                                        <li>Transportation and Multimodal Logistics Management (Semester 3, Credit 4)
+                                        </li>
+                                        <li>Warehousing, Inventory, and Distribution Management (Semester 3, Credit 4)
+                                        </li>
+                                        <li>Logistics Strategy and Documentation Systems (Semester 4, Credit 4)</li>
+                                        <li>Purchasing and Inventory Management (Semester 4, Credit 4)</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour">
+                                    Human Resource Management
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionMBA">
+                                <div class="accordion-body">
+                                    <ul>
+
+
+                                        <li>Talent Acquisition and Workforce Planning (Semester 3, Credit 4)</li>
+
+                                        <li>Learning and Development (Semester 3, Credit 4)</li>
+
+                                        <li>Compensation, Benefits, and Performance Management (Semester 3, Credit 4)
+                                        </li>
+
+                                        <li>Strategic HRM and Organizational Change (Semester 4, Credit 4)</li>
+
+                                        <li>Employee Relations and HR Analytics (Semester 4, Credit 4)</li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive">
+                                    Media Management
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionMBA">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Digital Media and Media Cost Management (Semester 3, Credit 4)</li>
+                                        <li>Media Production and Entertainment Management (Semester 3, Credit 4)</li>
+                                        <li>Sports, Events, and Entertainment Marketing (Semester 3, Credit 4)</li>
+                                        <li>Media Analytics and Distribution Strategy (Semester 4, Credit 4)</li>
+                                        <li>Media Planning and Buying (Semester 4, Credit 4)</li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix">
+                                    Business Analytics
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionMBA">
+                                <div class="accordion-body">
+                                    <ul>
+
+                                        <li>Programming for Analytics (Semester 3, Credit 4)</li>
+                                        <li>Text Mining, Data Mining, and Visualization (Semester 3, Credit 4)</li>
+                                        <li>AI, Machine Learning, and Deep Learning (Semester 3, Credit 4)</li>
+                                        <li>Applied Operations and Supply Chain Analytics (Semester 4, Credit 4)</li>
+                                        <li>AI-Driven Business Analytics and Digital Modelling (Semester 4, Credit 4)
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE CARD -->
+                <div class="col-lg-4">
+                    <div class="p-4 rounded shadow h-100" style="background-color: #ffffff;">
+
+                        <h2 class=" text-center pb-3">Get Your Brochure</h2>
+                        <p class="fw-light pb-4">
+                            Get detailed programme insights from Bennett University, powered by The Times Group.
+                        </p>
+                        <p class="pb-3"><strong><em>Get everything you need to decide at a glance.</em></strong></p>
+
+                        <img src="./asset/image/Online-MBA-Banner.png" class="img-fluid mb-3" alt="MBA Banner">
+
+                        <a href="#" class="btn btn-danger w-100">
+                            Speak with Counsellor →
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    \
+    <section class="curriculum py-5" id="eligibility">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- LEFT SIDE -->
+                <div class="col">
+
+                    <!-- Heading -->
+                    <div class="mb-4">
+                        <h2 class="fw-bold pb-3">
+                            Check Your <span class="text-primary-custom">Eligibility</span>
+                        </h2>
+                        <h4 class="text-primary-custom pb-2">Domestic Students</h4>
+                        <p class="mb-4">
+                            Applicants must have Passed Graduation in any discipline from a UGC-recognized university
+                            with a minimum of 50% aggregate marks and English as medium of instruction.
+                        </p>
+                        <h4 class="text-primary-custom pb-2">International Students</h4>
+                        <p class="mb-0">
+                            The eligibility criterion for all programmes for international applicants is minimum 50% in
+                            the qualifying examination and having studied the prerequisite subjects for admission into
+                            the desired programme.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fees-section py-5" id="fees">
+        <div class="container">
+
+            <!-- Heading -->
+            <h2 class="mb-4 fw-bold">
+                Fees Structure <span class="text-primary">& Scholarships</span>
+            </h2>
+
+            <!-- Fees Row -->
+            <div class="row g-0 shadow">
+
+                <div class="col-md-6 col-lg-3 text-center p-4 bg-light d-flex flex-column justify-content-center">
+                    <h4>Semester Fees</h4>
+                    <p class="fw-semibold mb-1">₹52,500 / Semester</p>
+                    <small>No. of Semesters 4</small>
+                </div>
+
+                <div
+                    class="col-md-6 col-lg-3 text-center p-4 bg-secondary-subtle d-flex flex-column justify-content-center">
+                    <h4>Annual Fees</h4>
+                    <p class="fw-semibold mb-1">₹1,05,000 / Year</p>
+                    <small>No. of Years 2</small>
+                </div>
+
+                <div class="col-md-6 col-lg-3 text-center p-4 bg-light d-flex flex-column justify-content-center">
+                    <h4>Programme Fees</h4>
+                    <p class="fw-semibold mb-1">₹210,000</p>
+                    <small>No Cost EMI Option Available</small>
+                </div>
+
+                <div
+                    class="col-md-6 col-lg-3 text-center p-4 bg-secondary-subtle d-flex flex-column justify-content-center">
+                    <h4>EMI Starting</h4>
+                    <p class="fw-semibold mb-1">₹8,334 per month</p>
+                    <small>No Cost EMI Option*</small>
+                </div>
+
+            </div>
+
+            <!-- Accordion -->
+            <div class="accordion mt-5" id="feesAccordion">
+
+                <!-- Note -->
+                <div class="accordion-item border border-danger mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse"
+                            data-bs-target="#note">
+                            Note
+                        </button>
+                    </h2>
+                    <div id="note" class="accordion-collapse collapse" data-bs-parent="#feesAccordion">
+                        <div class="accordion-body">
+                            <ul class="mb-0">
+
+                                <li>Application Fee (Non-Refundable) – ₹1,500</li>
+                                <li>A sum of ₹10,000/- will be collected at the time of registration as part of the
+                                    total programme fee.</li>
+                                <li>Examination Fee : ₹800/- per attempt per course.</li>
+                                <li>Students may be required to bear any additional payments incurred during the tenure
+                                    of the programme, such as arrear fees, re-registration fees, payment gateway
+                                    charges, or applicable taxes.</li>
+                                <li>The above-mentioned fee structure is subject to change at the discretion of the
+                                    University.</li>
+                                <li>Scholarships are granted as tuition fee waivers and are subject to document
+                                    verification.</li>
+                                <li>Loan application fees as applicable at discretion of loan provider.</li>
+                                <li>Loan terms are determined at the discretion of the loan provider.</li>
+                                <li>Loan cancellation charges may apply, as determined by the loan providerv.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scholarships -->
+                <div class="accordion-item border border-danger mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse"
+                            data-bs-target="#scholarship">
+                            Scholarships
+                        </button>
+                    </h2>
+                    <div id="scholarship" class="accordion-collapse collapse" data-bs-parent="#feesAccordion">
+                        <div class="accordion-body">
+
+                            <!-- Item -->
+                            <div class="d-flex align-items-start mb-3">
+                                <img src="./asset/image/Scholarship-20.png" width="50" class="me-3">
+                                <div>
+                                    <h6 class="fw-semibold mb-1">Defence Scholarship : 20%</h6>
+                                    <p class="mb-0 small">For defence personnel, their dependents and wards, on
+                                        submission of a valid Government of India–issued ID card.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <img src="./asset/image/Scholarship-10.png" width="50" class="me-3">
+                                <div>
+                                    <h6 class="fw-semibold mb-1">Bennett Alumni : 10%</h6>
+                                    <p class="mb-0 small">The University offers a scholarship to its alumni, subject to
+                                        verification of the BU passing certificate.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start">
+                                <img src="./asset/image/Scholarship-15.png" width="50" class="me-3">
+                                <div>
+                                    <h6 class="fw-semibold mb-1">Divyangjan : 15%</h6>
+                                    <p class="mb-0 small">Learners with benchmark disabilities are offered scholarship
+                                        on submission of a valid UDID card or disability certificate.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Refund -->
+                <div class="accordion-item border border-danger">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" data-bs-toggle="collapse"
+                            data-bs-target="#refund">
+                            Cancellation and Refund Policy
+                        </button>
+                    </h2>
+                    <div id="refund" class="accordion-collapse collapse" data-bs-parent="#feesAccordion">
+                        <div class="accordion-body">
+                            Bennett University follows the cancellation and refund policy as per UGC guidelines.
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="mba-certificate py-5" id="certificate">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Content -->
+                <div class="col-lg-8">
+
+                    <!-- Small Heading with Icon -->
+                    <div class="d-flex align-items-center mb-3 mini-heading">
+                        <div class="mini-icon">
+                            <svg viewBox="0 0 448 512">
+                                <path
+                                    d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48z" />
+                            </svg>
+                        </div>
+                        <span>More Than a Degree – A Proof of Excellence</span>
+                    </div>
+
+                    <!-- Main Heading -->
+                    <h2 class="fw-bold mb-3">MBA Degree Certificate</h2>
+
+                    <!-- Content -->
+                    <p class="pb-3">
+                        Celebrate a significant career milestone with an MBA Degree from Bennett University,
+                        a recognition of your commitment, capability and future-ready business skills.
+                    </p>
+
+                    <p class="pb-3">
+                        Awarded by one of India’s leading private universities, this Master’s degree validates
+                        your academic achievement while strengthening your professional credibility.
+                    </p>
+
+                    <p class="pb-3">
+                        More than a qualification, it reflects your journey of growth and leadership, marking
+                        you as a professional prepared to take on tomorrow’s business challenges.
+                    </p>
+
+                </div>
+
+                <!-- Right Image -->
+                <div class="col-lg-3 text-center">
+                    <div class="certificate-img text-center">
+                        <img decoding="async" src="./asset/image/BU-MBA-Degree.png" title="BU-MBA-Degree"
+                            alt="BU-MBA-Degree" loading="lazy" class="img-fluid" style="width:300px;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- REGISTRATION PROCESS -->
+    <section class="registration-process py-5">
+        <div class="container text-center">
+
+            <!-- HEADING -->
+            <h2 class="fw-bold mb-5">
+                Follow these simple steps to
+                <span class="text-primary-custom">register for the programme.</span>
+            </h2>
+
+            <!-- TIMELINE SLIDER -->
+            <div class="timeline-wrapper position-relative">
+
+                <!-- LINE -->
+                <div class="timeline-line"></div>
+
+                <!-- SLIDER -->
+                <div class="timeline-slider">
+
+                    <!-- ITEM -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-laptop" viewBox="0 0 640 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M624 416H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33.02-17.47-32.77-32H16c-8.8 0-16 7.2-16 16v16c0 35.2 28.8 64 64 64h512c35.2 0 64-28.8 64-64v-16c0-8.8-7.2-16-16-16zM576 48c0-26.4-21.6-48-48-48H112C85.6 0 64 21.6 64 48v336h512V48zm-64 272H128V64h384v256z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h5>Start Application</h5>
+                        <p>Register online; a student counsellor will connect with you.</p>
+                        <span>Step 1</span>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-far-file-alt" viewBox="0 0 384 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h5>Submit Documents</h5>
+                        <p>Upload required academic and personal documents.</p>
+                        <span>Step 2</span>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-far-money-bill-alt" viewBox="0 0 640 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M320 144c-53.02 0-96 50.14-96 112 0 61.85 42.98 112 96 112 53 0 96-50.13 96-112 0-61.86-42.98-112-96-112zm40 168c0 4.42-3.58 8-8 8h-64c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h16v-55.44l-.47.31a7.992 7.992 0 0 1-11.09-2.22l-8.88-13.31a7.992 7.992 0 0 1 2.22-11.09l15.33-10.22a23.99 23.99 0 0 1 13.31-4.03H328c4.42 0 8 3.58 8 8v88h16c4.42 0 8 3.58 8 8v16zM608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zm-16 272c-35.35 0-64 28.65-64 64H112c0-35.35-28.65-64-64-64V176c35.35 0 64-28.65 64-64h416c0 35.35 28.65 64 64 64v160z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h5>Pay Application Fee</h5>
+                        <p>Complete the application fee payment.</p>
+                        <span>Step 3</span>
+                    </div>
+
+                    <!-- ITEM -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-file-signature" viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M218.17 424.14c-2.95-5.92-8.09-6.52-10.17-6.52s-7.22.59-10.02 6.19l-7.67 15.34c-6.37 12.78-25.03 11.37-29.48-2.09L144 386.59l-10.61 31.88c-5.89 17.66-22.38 29.53-41 29.53H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h12.39c4.83 0 9.11-3.08 10.64-7.66l18.19-54.64c3.3-9.81 12.44-16.41 22.78-16.41s19.48 6.59 22.77 16.41l13.88 41.64c19.75-16.19 54.06-9.7 66 14.16 1.89 3.78 5.49 5.95 9.36 6.26v-82.12l128-127.09V160H248c-13.2 0-24-10.8-24-24V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24v-40l-128-.11c-16.12-.31-30.58-9.28-37.83-23.75zM384 121.9c0-6.3-2.5-12.4-7-16.9L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1zm-96 225.06V416h68.99l161.68-162.78-67.88-67.88L288 346.96zm280.54-179.63l-31.87-31.87c-9.94-9.94-26.07-9.94-36.01 0l-27.25 27.25 67.88 67.88 27.25-27.25c9.95-9.94 9.95-26.07 0-36.01z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h5>Application Review</h5>
+                        <p>University reviews your application.</p>
+                        <span>Step 4</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="application-calendar py-5">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">
+                    Application <span class="text-primary-custom">Calendar</span>
+                </h2>
+            </div>
+
+            <!-- Cards -->
+            <div class="row text-center g-4">
+
+                <!-- Item 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="calendar-card">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-far-edit" viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="pb-2">Application Opens</h4>
+                        <p>Admissions Open for January 2026 Batch</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="calendar-card">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-far-file-excel" viewBox="0 0 384 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M369.9 97.9L286 14C277 5 264.8-.1 252.1-.1H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V131.9c0-12.7-5.1-25-14.1-34zM332.1 128H256V51.9l76.1 76.1zM48 464V48h160v104c0 13.3 10.7 24 24 24h104v288H48zm212-240h-28.8c-4.4 0-8.4 2.4-10.5 6.3-18 33.1-22.2 42.4-28.6 57.7-13.9-29.1-6.9-17.3-28.6-57.7-2.1-3.9-6.2-6.3-10.6-6.3H124c-9.3 0-15 10-10.4 18l46.3 78-46.3 78c-4.7 8 1.1 18 10.4 18h28.9c4.4 0 8.4-2.4 10.5-6.3 21.7-40 23-45 28.6-57.7 14.9 30.2 5.9 15.9 28.6 57.7 2.1 3.9 6.2 6.3 10.6 6.3H260c9.3 0 15-10 10.4-18L224 320c.7-1.1 30.3-50.5 46.3-78 4.7-8-1.1-18-10.3-18z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="pb-2">Application Closes</h4>
+                        <p>To Be Announced</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="calendar-card">
+                        <div class="icon-box">
+                            <svg aria-hidden="true" class="e-font-icon-svg e-fas-user-shield" viewBox="0 0 640 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M622.3 271.1l-115.2-45c-4.1-1.6-12.6-3.7-22.2 0l-115.2 45c-10.7 4.2-17.7 14-17.7 24.9 0 111.6 68.7 188.8 132.9 213.9 9.6 3.7 18 1.6 22.2 0C558.4 489.9 640 420.5 640 296c0-10.9-7-20.7-17.7-24.9zM496 462.4V273.3l95.5 37.3c-5.6 87.1-60.9 135.4-95.5 151.8zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm96 40c0-2.5.8-4.8 1.1-7.2-2.5-.1-4.9-.8-7.5-.8h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c6.8 0 13.3-1.5 19.2-4-54-42.9-99.2-116.7-99.2-212z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="pb-2">Programme Commencement</h4>
+                        <p>March 2026</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- KEY RECRUITERS -->
+    <section class="recruiters-section py-5" id="recruiters">
+        <div class="container text-center">
+
+            <!-- Heading -->
+            <h2 class="fw-bold mb-4 text-light">Key Recruiters</h2>
+
+            <!-- Slider -->
+            <div class="recruiter-slider">
+
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/amazon-web-services.png"
+                        alt="amazon-web-services">
+
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/Ameyo.png" alt="Ameyo">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/Applyboard.png"
+                        alt="Applyboard">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/Blume-ventures.png"
+                        alt="Blume-ventures">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/BNY-Mellon.png"
+                        alt="BNY-Mellon">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/Cadence-Design-Systems.png"
+                        alt="Cadence-Design-Systems">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/capegimini.png"
+                        alt="capegimini">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/cisco.png" alt="cisco">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/cisco.png" alt="cocacola">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/Codenation-Innovation-Labs.png"
+                        alt="Codenation-Innovation-Labs">
+
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/commvault.png""
+                        alt=" commvault">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/cvent.png" alt="cvent">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/dell.png" alt="dell">
+
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/Frugal-Testing.png"
+                        alt="Frugal-Testing">
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/Google.png" alt="Google">
+
+                </div>
+                <div class="logo-item">
+                    <img decoding="async" class="swiper-slide-image" src="./asset/image/Hanu-Software.png"
+                        alt="Hanu-Software">
+                </div>
+
+            </div>
+
+            <!-- Bottom Text -->
+            <p class="mt-4 small text-light">
+                Recruiter associations shown are based on Bennett University’s overall alumni outcomes and institutional
+                relationships.
+            </p>
+
+        </div>
+    </section>
+    <!-- FOOTER COPYRIGHT -->
+    <section class="footer-bottom py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+
+                        <!-- Note -->
+
+                        Disclaimer : We are a listing platform that aggregates and displays information about various
+                        institutions and their programs. The program details featured on our website are sourced from
+                        the respective institution’s official website and brochure. Please note that institutions
+                        reserve the right to change program details, including fees, eligibility, and curriculum, at any
+                        time without prior notice. All logos, brand names, and trademarks are the property of their
+                        respective owners. These names, logos, and brands are used solely for the purpose of providing
+                        relevant information to our visitors and do not imply any affiliation or endorsement.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/919247485871?text=Hi%2C%20I'm%20interested%20in%20Bennett%20Online%20MBA%2C%20please%20contact%20me."
+        target="_blank" rel="noopener" class="whatsapp-float" title="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            bottom: 80px;
+            left: 20px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            z-index: 9999;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background: #1ebe5d;
+            color: white;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+            transform: translateY(-2px);
+        }
+    </style>
+
+    <!-- BACK TO TOP -->
+    <section id="backToTop" class="back-to-top d-flex align-items-center justify-content-center">
+        <span class="icon-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="57 35.171 26 16.043">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
+            </svg>
+        </span>
+    </section>
+
+
+
+    <!-- jQuery (must load first) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slick Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Main Script (validation + sliders + counters) -->
+    <script src="js/script.js"></script>
+
+    <script>
+        (function () {
+            const utmParams = [
+
+                'utm_source',
+
+                'utm_medium',
+
+                'utm_campaign',
+
+                'utm_campaignid',
+
+                'utm_content',
+
+                'utm_term',
+
+                'utm_placement',
+
+                'utm_platform',
+
+                'utmAdsetId',
+
+                'utmAdId',
+
+                'utmExp',
+
+                'Gclid',
+
+                'utmMediumInsead',
+
+                'utmIntent'
+
+            ];
+            const COOKIE_DAYS = 7;
+            // Set Cookie
+
+            function setCookie(name, value, days) {
+
+                let expires = "";
+
+                if (days) {
+
+                    let date = new Date();
+
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+
+                    expires = "; expires=" + date.toUTCString();
+
+                }
+
+                document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
+
+            }
+            // Get Cookie
+
+            function getCookie(name) {
+
+                let nameEQ = name + "=";
+
+                let ca = document.cookie.split(';');
+
+                for (let i = 0; i < ca.length; i++) {
+
+                    let c = ca[i].trim();
+
+                    if (c.indexOf(nameEQ) == 0) {
+
+                        return decodeURIComponent(c.substring(nameEQ.length, c.length));
+
+                    }
+
+                }
+
+                return null;
+
+            }
+            // Capture URL params & store in cookie (override if new)
+
+            const urlParams = new URLSearchParams(window.location.search);
+            utmParams.forEach(param => {
+
+                const value = urlParams.get(param);
+
+                if (value) {
+
+                    setCookie(param, value, COOKIE_DAYS);
+
+                }
+
+            });
+            // Append hidden fields to all forms
+
+            function appendUTMFields() {
+
+                document.querySelectorAll('form').forEach(form => {
+                    utmParams.forEach(param => {
+                        if (!form.querySelector('[name="' + param + '"]')) {
+                            let input = document.createElement('input');
+
+                            input.type = 'hidden';
+
+                            input.name = param;
+
+                            input.value = getCookie(param) || '';
+                            form.appendChild(input);
+
+                        }
+
+                    });
+                });
+
+            }
+            document.addEventListener("DOMContentLoaded", appendUTMFields);
+        })();
+    </script>
+
+    <div class="enquiry-wrapper">
+
+  <!-- LEFT SIDE -->
+  <div class="left-side">
+    <img src="./asset/image/Bennett-Logo.png" class="bennett-logo" alt="Bennett">
+    <div class="left-side">
+
+
+
+  <!-- 👇 PASTE HERE -->
+  <p class="bennett-desc">
+    Bennett Online is the Centre for Distance & Online Education of Bennett University, one of India’s leading private universities established by The Times Group.
+
+    It delivers future-ready, industry-aligned online programs, designed to help professionals grow their careers without putting them on pause.
+  </p>
+
+ 
+
+</div>
+
+    <!-- Social Media Icons -->
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </div>
+
+  <!-- CENTER LOGOS -->
+  <div class="center-logos">
+    <img src="asset/image/ugc.png" alt="UGC">
+    <img src="asset/image/naac.png" alt="NAAC">
+    <img src="asset/image/new-times.jpg" alt="Times">
+    <img src="asset/image/AIU.jpg" alt="AIU">
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-side">
+    <form id="enquiry-form" action="enquiry.php" method="POST">
+
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+      </div>
+
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+      </div>
+
+      <div class="mb-3">
+        <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+      </div>
+
+      <div class="mb-3">
+        <textarea name="message" class="form-control" rows="3" placeholder="Your Enquiry" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-danger w-100">
+        Submit Enquiry
+      </button>
+
+    </form>
+  </div>
+
+</div>
+
+</body>
+
+</html>
