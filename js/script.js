@@ -399,34 +399,62 @@ $(document).ready(function () {
         });
     }
 });
-document.getElementById("downloadBtn").addEventListener("click", function (e) {
-    e.preventDefault();
+document.getElementById("downloadBtn").addEventListener("click", function () {
 
-    // ✅ Directly get values (no form ID needed)
+    // 👉 Get form values
     const name = document.querySelector('[name="fullname"]').value;
     const email = document.querySelector('[name="email"]').value;
     const mobile = document.querySelector('[name="mobile"]').value;
     const city = document.querySelector('[name="city"]').value;
+    const specialization = document.querySelector('[name="mba_specialization"]').value;
 
-    // ✅ Download brochure
-    const link = document.createElement("a");
-    link.href = "./asset/MBA-Prospectus-Jan-2026.pdf";
-    link.download = "MBA_Brochure.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    // 👉 Basic validation (optional but recommended)
+    if (!name || !email || !mobile || !city) {
+        alert("Please fill all required fields");
+        return;
+    }
 
-    // ✅ WhatsApp message
-    const message = `New Lead:
-Name: ${name}
-Email: ${email}
-Mobile: ${mobile}
-City: ${city}`;
+    // ✅ WhatsApp message (formatted)
+    const message = `📩 New Lead Details
 
-    const phone = "919963323226";
+👤 Name: ${name}
+📧 Email: ${email}
+📱 Mobile: ${mobile}
+🏙️ City: ${city}
+🎯 Specialization: ${specialization}
+
+🎓 Program: Online MBA`;
+
+    const phone = "919247485871";
 
     const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-    // ✅ Open WhatsApp
+    // 👉 Save flag (to detect return)
+    localStorage.setItem("downloadAfterWhatsapp", "true");
+
+    // 👉 Open WhatsApp
     window.open(whatsappURL, "_blank");
+
+    // 👉 Fallback: auto download after 5 seconds
+    setTimeout(triggerDownload, 5000);
+});
+
+
+// ✅ Download function
+function triggerDownload() {
+    const link = document.createElement("a");
+    link.href = "asset/MBA-Prospectus-Jan-2026.pdf"; // 👉 your brochure path
+    link.download = "Bennett-MBA-Brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+
+// ✅ When user comes back from WhatsApp
+window.addEventListener("focus", function () {
+    if (localStorage.getItem("downloadAfterWhatsapp") === "true") {
+        localStorage.removeItem("downloadAfterWhatsapp");
+        triggerDownload();
+    }
 });
