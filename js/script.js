@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
 
         // Run all validations — use bitwise & so ALL run (not short-circuit)
-        var ok = checkName() && checkEmail() && checkMobile() && checkCity();
+        var ok = checkName() & checkEmail() & checkMobile() & checkCity();
 
         if (!ok) {
             var firstBad = form.querySelector('.is-invalid');
@@ -338,13 +338,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 resetFormFully();
 
                 // ✅ Show toast
-                const waURL = buildWAURL(leadData);
-
-// WhatsApp open
-window.open(waURL, "_blank");
-
-// Toast
-showToast(ref, brochureLink, waURL);
+                showToast(ref, brochureLink, buildWAURL(leadData));
             })
             .catch(function (err) {
                 console.error('Fetch error:', err);
@@ -404,4 +398,35 @@ $(document).ready(function () {
             ]
         });
     }
+});
+document.getElementById("downloadBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // ✅ Directly get values (no form ID needed)
+    const name = document.querySelector('[name="fullname"]').value;
+    const email = document.querySelector('[name="email"]').value;
+    const mobile = document.querySelector('[name="mobile"]').value;
+    const city = document.querySelector('[name="city"]').value;
+
+    // ✅ Download brochure
+    const link = document.createElement("a");
+    link.href = "./asset/MBA-Prospectus-Jan-2026.pdf";
+    link.download = "MBA_Brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // ✅ WhatsApp message
+    const message = `New Lead:
+Name: ${name}
+Email: ${email}
+Mobile: ${mobile}
+City: ${city}`;
+
+    const phone = "919963323226";
+
+    const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    // ✅ Open WhatsApp
+    window.open(whatsappURL, "_blank");
 });
