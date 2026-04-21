@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
 
         // Run all validations — use bitwise & so ALL run (not short-circuit)
-        var ok = checkName() & checkEmail() & checkMobile() & checkCity();
+        var ok = checkName() && checkEmail() && checkMobile() && checkCity();
 
         if (!ok) {
             var firstBad = form.querySelector('.is-invalid');
@@ -338,7 +338,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 resetFormFully();
 
                 // ✅ Show toast
-                showToast(ref, brochureLink, buildWAURL(leadData));
+                const waURL = buildWAURL(leadData);
+
+// WhatsApp open
+window.open(waURL, "_blank");
+
+// Toast
+showToast(ref, brochureLink, waURL);
             })
             .catch(function (err) {
                 console.error('Fetch error:', err);
@@ -397,64 +403,5 @@ $(document).ready(function () {
                 { breakpoint: 768, settings: { slidesToShow: 1 } }
             ]
         });
-    }
-});
-document.getElementById("downloadBtn").addEventListener("click", function () {
-
-    // 👉 Get form values
-    const name = document.querySelector('[name="fullname"]').value;
-    const email = document.querySelector('[name="email"]').value;
-    const mobile = document.querySelector('[name="mobile"]').value;
-    const city = document.querySelector('[name="city"]').value;
-    const specialization = document.querySelector('[name="mba_specialization"]').value;
-
-    // 👉 Basic validation (optional but recommended)
-    if (!name || !email || !mobile || !city) {
-        alert("Please fill all required fields");
-        return;
-    }
-
-    // ✅ WhatsApp message (formatted)
-    const message = `📩 New Lead Details
-
-👤 Name: ${name}
-📧 Email: ${email}
-📱 Mobile: ${mobile}
-🏙️ City: ${city}
-🎯 Specialization: ${specialization}
-
-🎓 Program: Online MBA`;
-
-    const phone = "919247485871";
-
-    const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-
-    // 👉 Save flag (to detect return)
-    localStorage.setItem("downloadAfterWhatsapp", "true");
-
-    // 👉 Open WhatsApp
-    window.open(whatsappURL, "_blank");
-
-    // 👉 Fallback: auto download after 5 seconds
-    setTimeout(triggerDownload, 5000);
-});
-
-
-// ✅ Download function
-function triggerDownload() {
-    const link = document.createElement("a");
-    link.href = "asset/MBA-Prospectus-Jan-2026.pdf"; // 👉 your brochure path
-    link.download = "Bennett-MBA-Brochure.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
-
-
-// ✅ When user comes back from WhatsApp
-window.addEventListener("focus", function () {
-    if (localStorage.getItem("downloadAfterWhatsapp") === "true") {
-        localStorage.removeItem("downloadAfterWhatsapp");
-        triggerDownload();
     }
 });
