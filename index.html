@@ -200,7 +200,7 @@
                             </div>
 
                             <div class="col-12">
-                                <button type="submit" class="btn submit-btn w-100">
+                                <button type="button" id="downloadBtn" class="btn submit-btn w-100">
                                     Download Brochure
                                 </button>
                             </div>
@@ -1695,70 +1695,73 @@
 
     <div class="enquiry-wrapper">
 
-  <!-- LEFT SIDE -->
-  <div class="left-side">
-    <img src="./asset/image/Bennett-Logo.png" class="bennett-logo" alt="Bennett">
-    <div class="left-side">
+        <!-- LEFT SIDE -->
+        <div class="left-side">
+            <img src="./asset/image/Bennett-Logo.png" class="bennett-logo" alt="Bennett">
+            <div class="left-side">
 
 
 
-  <!-- 👇 PASTE HERE -->
-  <p class="bennett-desc">
-    Bennett Online is the Centre for Distance & Online Education of Bennett University, one of India’s leading private universities established by The Times Group.
+                <!-- 👇 PASTE HERE -->
+                <p class="bennett-desc">
+                    Bennett Online is the Centre for Distance & Online Education of Bennett University, one of India’s
+                    leading private universities established by The Times Group.
 
-    It delivers future-ready, industry-aligned online programs, designed to help professionals grow their careers without putting them on pause.
-  </p>
+                    It delivers future-ready, industry-aligned online programs, designed to help professionals grow
+                    their careers without putting them on pause.
+                </p>
 
- 
 
-</div>
 
-    <!-- Social Media Icons -->
-    <div class="social-links">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      <a href="#"><i class="fab fa-youtube"></i></a>
-      <a href="#"><i class="fab fa-x-twitter"></i></a>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- CENTER LOGOS -->
+        <div class="center-logos">
+            <img src="asset/image/UGC.png" alt="UGC">
+            <img src="asset/image/NAAC.png" alt="NAAC">
+            <img src="asset/image/new-times.jpg" alt="Times">
+            <img src="asset/image/AIU.jpg" alt="AIU">
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-side">
+            <form id="enquiry-form" action="enquiry.php" method="POST">
+
+                <div class="mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
+                </div>
+
+                <div class="mb-3">
+                    <textarea name="message" class="form-control" rows="3" placeholder="Your Enquiry"
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-danger w-100">
+                    Submit Enquiry
+                </button>
+
+            </form>
+        </div>
+
     </div>
-  </div>
-
-  <!-- CENTER LOGOS -->
-  <div class="center-logos">
-    <img src="asset/image/ugc.png" alt="UGC">
-    <img src="asset/image/naac.png" alt="NAAC">
-    <img src="asset/image/new-times.jpg" alt="Times">
-    <img src="asset/image/AIU.jpg" alt="AIU">
-  </div>
-
-  <!-- RIGHT SIDE -->
-  <div class="right-side">
-    <form id="enquiry-form" action="enquiry.php" method="POST">
-
-      <div class="mb-3">
-        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-      </div>
-
-      <div class="mb-3">
-        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-      </div>
-
-      <div class="mb-3">
-        <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
-      </div>
-
-      <div class="mb-3">
-        <textarea name="message" class="form-control" rows="3" placeholder="Your Enquiry" required></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-danger w-100">
-        Submit Enquiry
-      </button>
-
-    </form>
-  </div>
-
-</div>
 
 </body>
 

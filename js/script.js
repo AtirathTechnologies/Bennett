@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
             const counter = entry.target;
             if (counter.classList.contains('started')) return;
             counter.classList.add('started');
-            const target    = +counter.getAttribute('data-target');
-            const suffix    = counter.getAttribute('data-suffix') || '';
+            const target = +counter.getAttribute('data-target');
+            const suffix = counter.getAttribute('data-suffix') || '';
             const increment = target / 60;
             let count = 0;
             const tick = () => {
@@ -43,18 +43,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById('userFrm');
     if (!form) return;
 
-    const nameField   = form.querySelector('[name="fullname"]');
-    const emailField  = form.querySelector('[name="email"]');
+    const nameField = form.querySelector('[name="fullname"]');
+    const emailField = form.querySelector('[name="email"]');
     const mobileField = form.querySelector('[name="mobile"]');
-    const cityField   = form.querySelector('select[name="city"]');
-    const ccSelect    = form.querySelector('select[name="country_code"]');
-    const submitBtn   = form.querySelector('[type="submit"]');
+    const cityField = form.querySelector('select[name="city"]');
+    const ccSelect = form.querySelector('select[name="country_code"]');
+    const submitBtn = form.querySelector('[type="submit"]');
 
 
     /* ── Error display helpers ── */
     function getErrEl(field) {
         const wrapper = field.closest('.phone-wrapper');
-        const parent  = wrapper ? wrapper.parentElement : field.parentElement;
+        const parent = wrapper ? wrapper.parentElement : field.parentElement;
         let el = parent.querySelector('.invalid-feedback');
         if (!el) {
             el = document.createElement('div');
@@ -84,22 +84,22 @@ document.addEventListener("DOMContentLoaded", function () {
     /* ── Validation rules ── */
     function checkName() {
         const v = nameField.value;
-        if (!v.trim())                           return markInvalid(nameField, 'Full name is required.'),        false;
+        if (!v.trim()) return markInvalid(nameField, 'Full name is required.'), false;
         if (!/^[a-zA-Z\s]{2,}$/.test(v.trim())) return markInvalid(nameField, 'Letters only, min 2 characters.'), false;
-        if (v.trim().length > 80)                return markInvalid(nameField, 'Name cannot exceed 80 characters.'), false;
+        if (v.trim().length > 80) return markInvalid(nameField, 'Name cannot exceed 80 characters.'), false;
         markValid(nameField); return true;
     }
 
     function checkEmail() {
         const v = emailField.value;
-        if (!v.trim())                                         return markInvalid(emailField, 'Email address is required.'), false;
+        if (!v.trim()) return markInvalid(emailField, 'Email address is required.'), false;
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim())) return markInvalid(emailField, 'Please enter a valid email address.'), false;
-        if (v.trim().length > 150)                             return markInvalid(emailField, 'Email cannot exceed 150 characters.'), false;
+        if (v.trim().length > 150) return markInvalid(emailField, 'Email cannot exceed 150 characters.'), false;
         markValid(emailField); return true;
     }
 
     function checkMobile() {
-        const v  = mobileField.value.trim();
+        const v = mobileField.value.trim();
         const cc = ccSelect ? ccSelect.value : '+91';
         if (!v) return markInvalid(mobileField, 'Mobile number is required.'), false;
         if (cc === '+91' && !/^[6-9][0-9]{9}$/.test(v))
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
         /* 6. Force selects back — form.reset() handles value but not selectedIndex
               in all browsers reliably */
         if (cityField) cityField.selectedIndex = 0;
-        if (ccSelect)  ccSelect.value = '+91';
+        if (ccSelect) ccSelect.value = '+91';
 
         /* 7. Re-check consent checkbox (default = checked) */
         const consent = form.querySelector('[name="marketing_consent"]');
@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Snapshot form data BEFORE reset
         var formData = new FormData(form);
-        var program  = formData.get('program') || '';
+        var program = formData.get('program') || '';
 
         // Trigger brochure download immediately
         var brochureLink = triggerDownload(program);
@@ -305,7 +305,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 var body = res && res.api_response && res.api_response.body;
-                var ref  = (body && (body.referenceNumber || body.recordId)) || null;
+                var ref = (body && (body.referenceNumber || body.recordId)) || null;
 
                 if (!ref) {
                     showAjaxError('Something went wrong. Please try again.');
@@ -315,13 +315,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 var leadData = {
-                    name:    formData.get('fullname')          || '',
-                    email:   formData.get('email')              || '',
-                    phone:   (formData.get('country_code') || '') + ' ' + (formData.get('mobile') || ''),
-                    city:    formData.get('city')               || '',
+                    name: formData.get('fullname') || '',
+                    email: formData.get('email') || '',
+                    phone: (formData.get('country_code') || '') + ' ' + (formData.get('mobile') || ''),
+                    city: formData.get('city') || '',
                     program: program,
-                    spec:    formData.get('mba_specialization') || '',
-                    ref:     ref
+                    spec: formData.get('mba_specialization') || '',
+                    ref: ref
                 };
 
                 // DataLayer
@@ -398,4 +398,35 @@ $(document).ready(function () {
             ]
         });
     }
+});
+document.getElementById("downloadBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    // ✅ Directly get values (no form ID needed)
+    const name = document.querySelector('[name="fullname"]').value;
+    const email = document.querySelector('[name="email"]').value;
+    const mobile = document.querySelector('[name="mobile"]').value;
+    const city = document.querySelector('[name="city"]').value;
+
+    // ✅ Download brochure
+    const link = document.createElement("a");
+    link.href = "./asset/MBA-Prospectus-Jan-2026.pdf";
+    link.download = "MBA_Brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // ✅ WhatsApp message
+    const message = `New Lead:
+Name: ${name}
+Email: ${email}
+Mobile: ${mobile}
+City: ${city}`;
+
+    const phone = "919963323226";
+
+    const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+    // ✅ Open WhatsApp
+    window.open(whatsappURL, "_blank");
 });
